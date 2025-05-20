@@ -1,0 +1,37 @@
+.Task{
+    /* height:20%; */
+    /* background-color: #aaa; */
+    /* box-shadow: 0 0 2px rgb(255, 255, 255); */
+    border-radius: 10px;
+    /* border-bottom: 1px solid rgb(0, 0, 0); */
+    margin:10px  ;
+    padding:10px 5px 10px 10px;
+    color:white;
+}
+.task-det{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.task-det p{
+    max-width: 60%;
+    font-weight: 100;
+}
+
+.task-det button{
+    border-radius: 7px;
+    border: 1px solid white;
+    margin:5px 7px;
+    padding:8px;
+    cursor: pointer;
+    background-color: green;
+
+}
+.task-det #remove{
+    background-color: rgb(221, 76, 76);
+}
+.done-task{
+    opacity: 0.4;
+    text-decoration: line-through;
+    background-color: rgba(12, 62, 16, 0.337);
+}

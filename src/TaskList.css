@@ -1,0 +1,125 @@
+.eff{
+    position: absolute;
+    z-index: -1;
+    height:300vh;
+    width: 60vw;
+    background-color: rgba(255, 255, 255, 0.016);
+    backdrop-filter: blur(5px);
+    top:-150vh;
+    left:-50%;
+    transform: rotateZ(45deg);
+
+}
+
+.header{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.Tasks{
+    padding: 10px;
+    margin:50px 0px;
+    background-color: rgba(255, 255, 255, 0.077);
+    backdrop-filter: blur(5px);
+    width:70vw;
+    border-radius :20px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: #394049;
+    border:2px solid white;
+ 
+}
+.Tasks::before{
+    content:"TO-DO LIST";
+    color:white;
+    position: absolute;
+    top:-40px;
+    left: 0;
+    font-size: 30px
+}
+.Tasks h2{
+    margin:20px 0px 20px 10px;
+    color:rgb(255, 255, 255);
+}
+
+.Tasks .tracker{
+    position: relative;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding-top:9px;
+    text-align: center;
+    background:white;
+    font-size: 13px;
+}
+.Tasks .tracker::before{
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background:conic-gradient(from 0deg,#0051ff  ,transparent);
+
+
+}
+
+
+.Tasks input{
+    padding:12px 20px;
+    width:60%;
+    background-color: rgb(220, 220, 220);
+    color:rgb(0, 0, 0);
+    margin:0px 10px 10px 10px;
+    border-radius: 8px;
+    border: none;
+}
+.Tasks button{
+    cursor: pointer;
+    padding:12px 20px;
+    color:white;
+    border:none;
+    border-radius: 5px;
+   background-color: #394875;
+    transition: all 0.3s;
+
+    &:active{
+        transform: scale(0.9);
+    }
+}
+
+
+.dark-Tasks{
+   
+ 
+   
+   
+    background:linear-gradient(to right bottom ,rgb(39, 39, 39),rgb(0, 0, 0));
+}
+.dark-Tasks .Task{
+    color:white;
+    font-family: monospace;
+    font-weight: 100;
+}
+.dark-Tasks button{
+    background: linear-gradient(0deg, black,black);
+    
+    border: 1px solid #90abfb;
+    color: #7fa6fc ;
+
+}
+.dark-Tasks #remove{
+    color: rgb(249, 147, 147);
+    border: 1px solid rgb(240, 136, 136)
+}
+.dark-Tasks #mark-done{
+    color:rgb(0, 211, 0);
+    border:1px solid rgb(1, 235, 1)
+}
+
